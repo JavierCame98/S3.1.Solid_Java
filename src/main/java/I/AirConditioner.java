@@ -1,5 +1,6 @@
-public class AirConditioner implements MachineActions {
+package I;
 
+public class AirConditioner implements MachineAction, ManageTemperatures{
     @Override
     public void turnOn() {
         System.out.println("AirConditioner is ON");
@@ -19,10 +20,4 @@ public class AirConditioner implements MachineActions {
     public void cool() {
         System.out.println("AirConditioner is cooling.");
     }
-
-    @Override
-    public void wash() {
-        System.out.println("Wash operation not supported by AirConditioner.");
-    }
 }
-
